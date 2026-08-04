@@ -1,100 +1,101 @@
-version: 1
-
 project:
-  title: "Accurate Unsupervised Photon Counting from Transition Edge Sensor Signals"
-  authors:
-    - name: Nicolas Dalbec-Constant
-      email: nicolas.dalbec-constant@polymtl.ca
-      orcid: 0009-0003-3432-9816 
-      affiliations: polytechnique
-    - name: Guillaume Thekkadath
-      orcid: 0000-0002-4366-2245
-      affiliations: nrc
-    - name: Duncan England
-      orcid: 0000-0002-9101-6897
-      affiliations: nrc
-    - name: Benjamin Sussman
-      affiliations: nrc
-    - name: Thomas Gerrits
-      affiliations: nist
-      orcid: 0000-0001-8135-1811
-    - name: Nicolás Quesada
-      orcid: 0000-0002-0175-1688
-      email: nicolas.quesada@polymtl.ca
-      affiliations: polytechnique
-  affiliations:
-    - id: polytechnique
-      institution: Département de génie physique, École Polytechnique de Montréal
-      city: Montreal
-      region: Quebec
-      country: Canada
-      postal_code: H3T 1J4
-    - id: nrc
-      institution: National Research Council of Canada
-      address: 100 Sussex Drive
-      city: Ottawa
-      region: Ontario
-      country: Canada
-      postal_code: K1N 5A2
-    - id: nist
-      institution: National Institute of Standards and Technology
-      address: 100 Bureau Drive
-      city: Gaithersburg
-      region: MD
-      country: USA
-      postal_code: "20899"
-  copyright: '2024'
-  banner: featured.jpg
-  thebe:
-    binder:
-      url: https://terrarium.evidencepub.io
-      repo: polyquantique/Neurolibre-Photon-Number-Classification
-      ref: HEAD
-  keywords:
-    - photon counting
-    - transition edge sensor
-    - unsupervised learning
-  venue: Evidence
-  subject: Living Preprint
-  numbering:
-    headings: true
-  doi: 10.55458/evidencepub.xxxxx
-  open_access: true
-  license:
-    content: CC-BY-4.0
-    code: MIT
   abbreviations:
     MyST: Markedly Structured Markdown
-    TES: Transition Edge Sensor
     SQUID: Superconducting Quantum Interference Device
+    TES: Transition Edge Sensor
+  affiliations:
+  - city: Montreal
+    country: Canada
+    id: polytechnique
+    institution: "D\xE9partement de g\xE9nie physique, \xC9cole Polytechnique de Montr\xE9\
+      al"
+    postal_code: H3T 1J4
+    region: Quebec
+  - address: 100 Sussex Drive
+    city: Ottawa
+    country: Canada
+    id: nrc
+    institution: National Research Council of Canada
+    postal_code: K1N 5A2
+    region: Ontario
+  - address: 100 Bureau Drive
+    city: Gaithersburg
+    country: USA
+    id: nist
+    institution: National Institute of Standards and Technology
+    postal_code: '20899'
+    region: MD
+  authors:
+  - affiliations: polytechnique
+    email: nicolas.dalbec-constant@polymtl.ca
+    name: Nicolas Dalbec-Constant
+    orcid: 0009-0003-3432-9816
+  - affiliations: nrc
+    name: Guillaume Thekkadath
+    orcid: 0000-0002-4366-2245
+  - affiliations: nrc
+    name: Duncan England
+    orcid: 0000-0002-9101-6897
+  - affiliations: nrc
+    name: Benjamin Sussman
+  - affiliations: nist
+    name: Thomas Gerrits
+    orcid: 0000-0001-8135-1811
+  - affiliations: polytechnique
+    email: nicolas.quesada@polymtl.ca
+    name: "Nicol\xE1s Quesada"
+    orcid: 0000-0002-0175-1688
+  banner: featured.jpg
   bibliography:
-    - content/paper.bib
-  toc:
-    - file: paper.md
-      title: "Paper"
-    - file: content/Context.ipynb
-      title: "Context"
-    - file: content/Methods_Uniform.ipynb
-      title: "Methods: Uniform"
-    - file: content/Methods_Geometric.ipynb
-      title: "Methods: Geometric"
-    - file: content/Methods_Large.ipynb
-      title: "Methods: Large"
-    - file: content/Results.ipynb
-      title: "Results"
+  - content/paper.bib
+  copyright: NeuroLibre
+  date: '2024-03-12'
+  doi: 10.55458/neurolibre.00046
+  github: https://github.com/roboneurolibre/Neurolibre-Photon-Number-Classification
+  keywords:
+  - photon counting
+  - transition edge sensor
+  - unsupervised learning
+  license:
+    content: CC-BY-4.0
+  numbering:
+    headings: true
+  open_access: true
   resources:
-    - content/Context.ipynb
-    - content/Methods_Uniform.ipynb
-    - content/Methods_Geometric.ipynb
-    - content/Methods_Large.ipynb
-    - content/Results.ipynb
-  date: "2024-03-12"
-
-# Site / HTML options
+  - content/Context.ipynb
+  - content/Methods_Uniform.ipynb
+  - content/Methods_Geometric.ipynb
+  - content/Methods_Large.ipynb
+  - content/Results.ipynb
+  subject: Living Preprint
+  thebe:
+    binder:
+      ref: main
+      repo: roboneurolibre/Neurolibre-Photon-Number-Classification
+      url: https://live.evidencepub.io
+  title: Accurate Unsupervised Photon Counting from Transition Edge Sensor Signals
+  toc:
+  - file: paper.md
+    title: Paper
+  - file: content/Context.ipynb
+    title: Context
+  - file: content/Methods_Uniform.ipynb
+    title: 'Methods: Uniform'
+  - file: content/Methods_Geometric.ipynb
+    title: 'Methods: Geometric'
+  - file: content/Methods_Large.ipynb
+    title: 'Methods: Large'
+  - file: content/Results.ipynb
+    title: Results
+  venue: NeuroLibre
 site:
-  template: article-theme
+  actions:
+  - title: "\U0001F3E0 Home"
+    url: https://doi.org/10.55458/neurolibre.00046
   favicon: content/Figures/polytechnique_gauche_rgb.png
   options:
-    logo_light: content/Figures/polytechnique_gauche_rgb.png
-    logo_dark: content/Figures/polytechnique_gauche_inverse_rgb.png
     extra_navbar: Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+    logo_dark: content/Figures/polytechnique_gauche_inverse_rgb.png
+    logo_light: content/Figures/polytechnique_gauche_rgb.png
+  template: article-theme
+version: 1
